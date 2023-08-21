@@ -9,7 +9,11 @@ body * {
 }
 
 body {
-  background: linear-gradient(150deg, #0f2b05, #000000);
+  background: hsla(48, 9%, 21%, 1);
+  background: linear-gradient(120deg, hsla(48, 9%, 21%, 1) 0%, hsla(300, 92%, 46%, 1) 100%);
+  background: -moz-linear-gradient(120deg, hsla(48, 9%, 21%, 1) 0%, hsla(300, 92%, 46%, 1) 100%);
+  background: -webkit-linear-gradient(120deg, hsla(48, 9%, 21%, 1) 0%, hsla(300, 92%, 46%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#3B3931", endColorstr="#E009E0", GradientType=1);
   height: 100vh;
 
   text-align: center;
@@ -36,7 +40,7 @@ header {
   -webkit-user-select: none;
 }
 
-.card > img {
+.card>img {
   width: 150px;
   height: 150px;
   object-fit: cover;
